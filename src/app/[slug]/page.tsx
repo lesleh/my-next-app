@@ -3,6 +3,12 @@ export type SlugPageProps = {
   searchParams: URLSearchParams;
 };
 
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return ["foo", "bar", "baz", "qux"].map((slug) => ({ slug }));
+}
+
 export default function SlugPage({ params: { slug } }: SlugPageProps) {
   return <div>{slug}</div>;
 }

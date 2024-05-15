@@ -2,7 +2,7 @@ import { Loading } from "@/components/Loading";
 import { Slow } from "@/components/Slow";
 import { Suspense } from "react";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "auto";
 
 export default function Home() {
   return (
